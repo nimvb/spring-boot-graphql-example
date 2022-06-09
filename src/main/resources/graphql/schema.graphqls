@@ -1,0 +1,15 @@
+type User {
+    email: String!,
+    password: String
+}
+
+type Query {
+    user(email: String): User
+    users: [User]
+}
+
+type Subscription {
+    users: User
+}
+
+
